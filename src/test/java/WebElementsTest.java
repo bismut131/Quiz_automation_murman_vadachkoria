@@ -60,6 +60,8 @@ public class WebElementsTest {
             addElementButton.click();
         }
 
+        Thread.sleep(1000);
+
         //print last delete buttons element's text
         WebElement lastDeleteButton = driver.findElement(By.cssSelector("#elements .added-manually:last-child"));
         System.out.println("Button text is: " + lastDeleteButton.getText());
@@ -70,6 +72,8 @@ public class WebElementsTest {
 
         //click on last delete button
         lastDeleteButton.click();
+
+        Thread.sleep(1000);
 
         //check the number of delete buttons after click
         List<WebElement> deleteButtonsAfterClick = driver.findElements(By.cssSelector("#elements .added-manually"));
