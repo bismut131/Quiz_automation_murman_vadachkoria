@@ -73,7 +73,7 @@ public class WebFormsTest {
 
         //check if orange option is disabled in dropdown
         WebElement orangeOption = driver.findElement(By.cssSelector("#fruit-selects option[disabled='disabled']"));
-        System.out.println("Orange Radio button is enabled: " + orangeOption.isEnabled());
+        System.out.println(orangeOption.getText() + " option is enabled: " + orangeOption.isEnabled());
         Thread.sleep(500);
     }
 }
