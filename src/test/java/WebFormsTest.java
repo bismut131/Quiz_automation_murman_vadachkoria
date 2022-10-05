@@ -46,9 +46,9 @@ public class WebFormsTest {
         WebElement sqlRadio = driver.findElement(By.xpath("//option[@value='sql']"));
         System.out.println("SQL has been selected: " + sqlRadio.isSelected());
         WebElement mavenRadio = driver.findElement(By.xpath("//option[@value='maven']"));
-        System.out.println("maven has been selected: " + sqlRadio.isSelected());
+        System.out.println("maven has been selected: " + mavenRadio.isSelected());
         WebElement javascriptRadio = driver.findElement(By.xpath("//option[@value='javascript']"));
-        System.out.println("javascript has been selected: " + sqlRadio.isSelected());
+        System.out.println("javascript has been selected: " + javascriptRadio.isSelected());
 
         //select all checkboxes
         List<WebElement> options = driver.findElements(By.cssSelector("#checkboxes input"));
